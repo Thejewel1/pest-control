@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
-    <!-- Google tag (gtag.js) - Google Ads Tracking -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16586800443"></script>
+    <!-- Google tag (gtag.js) - NEW Google Ads Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11213387429"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'AW-16586800443');
+      gtag('config', 'AW-11213387429');
     </script>
 
-    <!-- Event snippet for conversion tracking -->
+    <!-- Event snippet for نقرة صادرة إلى الخارج conversion page -->
     <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -22,14 +22,14 @@
         }
       };
       gtag('event', 'conversion', {
-          'send_to': 'AW-16586800443/EyCMCNH247wcELv6meU9',
+          'send_to': 'AW-11213387429/gOwNCIn3vb4cEKXt-uIp',
           'event_callback': callback
       });
       return false;
     }
     </script>
 
-    <!-- Call and WhatsApp tracking functions with conversion support -->
+    <!-- Call and WhatsApp tracking functions with conversion support (UPDATED) -->
     <script>
     function makePhoneCall(phoneNumber) {
       var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
@@ -41,12 +41,15 @@
         }
       }
       var telUrl = 'tel:' + cleanNumber;
+      
       if (typeof gtag_report_conversion === 'function') {
         gtag_report_conversion(telUrl);
       }
+      
       setTimeout(function() {
         window.location.href = telUrl;
-      }, 100);
+      }, 150);
+      
       return false;
     }
 
@@ -56,7 +59,7 @@
       }
       setTimeout(function() {
         window.open(url, '_blank');
-      }, 100);
+      }, 150);
       return false;
     }
     </script>
@@ -784,7 +787,7 @@
 
     <section class="testimonials">
         <h2 class="section-title">عملاء سعداء بخدماتنا</h2>
-        <div class="testimonials-grid">
+        <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
             <div class="testimonial-card"><p class="testimonial-text">"من افضل شركات مكافحة الحشرات بالكويت، العجينة الاصلية قضت على الصراصير نهائياً. أنصح بالتعامل مع جوهرة الخليج وبشدة."</p><p class="testimonial-author">- أم خالد - حولي</p></div>
             <div class="testimonial-card"><p class="testimonial-text">"خدمة سريعة ومبيدات بدون رائحة، النمل اختفى تماماً من الحديقة. فريق محترف وأسعار رائعة. شكراً جوهرة الخليج."</p><p class="testimonial-author">- أبو عبدالله - الفروانية</p></div>
             <div class="testimonial-card"><p class="testimonial-text">"تعاملت معهم لمكافحة بق الفراش، جلسوا معنا خطوة بخطوة والنتيجة ممتازة. أوصي بهم لأي أحد يعاني من الحشرات."</p><p class="testimonial-author">- سارة - السالمية</p></div>
@@ -812,9 +815,13 @@
 
     <div class="search-tags">
         <h3>كلمات البحث الأكثر شيوعاً لمكافحة الحشرات</h3>
-        <div class="tags-container">
-            <span class="service-tag">شركة مكافحة حشرات</span><span class="service-tag">رش مبيدات الكويت</span><span class="service-tag">عجينة الصراصير الاصلية</span>
-            <span class="service-tag">مكافحة النمل الابيض</span><span class="service-tag">افضل شركة مكافحة حشرات</span><span class="service-tag">مكافحة بق الفراش</span>
+        <div class="tags-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+            <span class="service-tag" style="background: linear-gradient(135deg, #43A047, #2E7D32); padding: 10px 20px; border-radius: 30px; color: white; font-weight: bold; border: 2px solid #FDD835;">شركة مكافحة حشرات</span>
+            <span class="service-tag" style="background: linear-gradient(135deg, #43A047, #2E7D32); padding: 10px 20px; border-radius: 30px; color: white; font-weight: bold; border: 2px solid #FDD835;">رش مبيدات الكويت</span>
+            <span class="service-tag" style="background: linear-gradient(135deg, #43A047, #2E7D32); padding: 10px 20px; border-radius: 30px; color: white; font-weight: bold; border: 2px solid #FDD835;">عجينة الصراصير الاصلية</span>
+            <span class="service-tag" style="background: linear-gradient(135deg, #43A047, #2E7D32); padding: 10px 20px; border-radius: 30px; color: white; font-weight: bold; border: 2px solid #FDD835;">مكافحة النمل الابيض</span>
+            <span class="service-tag" style="background: linear-gradient(135deg, #43A047, #2E7D32); padding: 10px 20px; border-radius: 30px; color: white; font-weight: bold; border: 2px solid #FDD835;">افضل شركة مكافحة حشرات</span>
+            <span class="service-tag" style="background: linear-gradient(135deg, #43A047, #2E7D32); padding: 10px 20px; border-radius: 30px; color: white; font-weight: bold; border: 2px solid #FDD835;">مكافحة بق الفراش</span>
         </div>
     </div>
 
@@ -825,33 +832,22 @@
 
     <div class="simple-footer">
         <p>🏆 شركة جوهرة الخليج لمكافحة الحشرات - افضل شركة مكافحة حشرات و قوارض بالكويت - رش مبيدات المانية و امريكية بدون رائحة - القضاء على الصراصير والنمل والبق - خدمة 24 ساعة 🏆</p>
-        <div class="footer-phone" onclick="makePhoneCall('50053012')"><i class="fas fa-phone"></i> 50053012</div>
+        <div class="footer-phone" onclick="makePhoneCall('50053012')" style="font-weight: 800; font-size: 1.2rem; cursor: pointer; margin: 0.5rem 0;"><i class="fas fa-phone"></i> 50053012</div>
         <p>جميع الحقوق محفوظة © 2026 | جوهرة الخليج - ضمان شامل على خدمات مكافحة الحشرات</p>
     </div>
 
     <script>
+        // Handle contact form submission with conversion tracking
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion();
+            }
             alert('شكراً لتواصلكم مع شركة جوهرة الخليج! سيتم الاتصال بكم فوراً لتأكيد موعد الخدمة والكشف المجاني.');
             this.reset();
         });
         
-        function makePhoneCall(phoneNumber) {
-            var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
-            if (!cleanNumber.startsWith('+') && !cleanNumber.startsWith('00')) {
-                cleanNumber = '+965' + cleanNumber;
-            }
-            var telUrl = 'tel:' + cleanNumber;
-            if (typeof gtag_report_conversion === 'function') gtag_report_conversion(telUrl);
-            setTimeout(() => window.location.href = telUrl, 100);
-            return false;
-        }
-        
-        function trackWhatsAppClick(url) {
-            if (typeof gtag_report_conversion === 'function') gtag_report_conversion(url);
-            setTimeout(() => window.open(url, '_blank'), 100);
-            return false;
-        }
+        // makePhoneCall and trackWhatsAppClick are already defined globally above
     </script>
 </body>
 </html>
