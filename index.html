@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
-    <!-- Google tag (gtag.js) - NEW Google Ads Tracking -->
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="30Y63clHeVVanQVM_TebeceVXTWlgfLOjEQD5JLqark" />
+    
+    <!-- Google tag (gtag.js) - Google Ads Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11213387429"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -29,7 +32,7 @@
     }
     </script>
 
-    <!-- Call and WhatsApp tracking functions with conversion support (UPDATED) -->
+    <!-- Call and WhatsApp tracking functions with conversion support -->
     <script>
     function makePhoneCall(phoneNumber) {
       var cleanNumber = String(phoneNumber).replace(/[\s\-]/g, '');
@@ -658,6 +661,20 @@
             border-top: 5px solid var(--sunny-yellow);
         }
         
+        .footer-phone {
+            font-weight: 800;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin: 0.5rem 0;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+        
+        .footer-phone:hover {
+            transform: scale(1.05);
+            color: var(--sunny-yellow);
+        }
+        
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 1.8rem;
@@ -832,7 +849,7 @@
 
     <div class="simple-footer">
         <p>🏆 شركة جوهرة الخليج لمكافحة الحشرات - افضل شركة مكافحة حشرات و قوارض بالكويت - رش مبيدات المانية و امريكية بدون رائحة - القضاء على الصراصير والنمل والبق - خدمة 24 ساعة 🏆</p>
-        <div class="footer-phone" onclick="makePhoneCall('50053012')" style="font-weight: 800; font-size: 1.2rem; cursor: pointer; margin: 0.5rem 0;"><i class="fas fa-phone"></i> 50053012</div>
+        <div class="footer-phone" onclick="makePhoneCall('50053012')"><i class="fas fa-phone"></i> 50053012</div>
         <p>جميع الحقوق محفوظة © 2026 | جوهرة الخليج - ضمان شامل على خدمات مكافحة الحشرات</p>
     </div>
 
@@ -846,8 +863,6 @@
             alert('شكراً لتواصلكم مع شركة جوهرة الخليج! سيتم الاتصال بكم فوراً لتأكيد موعد الخدمة والكشف المجاني.');
             this.reset();
         });
-        
-        // makePhoneCall and trackWhatsAppClick are already defined globally above
     </script>
 </body>
 </html>
